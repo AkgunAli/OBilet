@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		802BAF3727A0AC3C004B8A5D /* RoadDateView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 802BAF3627A0AC3C004B8A5D /* RoadDateView.xib */; };
 		802BAF3927A0AC45004B8A5D /* RoadDateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802BAF3827A0AC45004B8A5D /* RoadDateView.swift */; };
+		802BAF3C27A0BE28004B8A5D /* RoundTripView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 802BAF3B27A0BE28004B8A5D /* RoundTripView.xib */; };
+		802BAF3E27A0BE33004B8A5D /* RoundTripView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802BAF3D27A0BE33004B8A5D /* RoundTripView.swift */; };
 		80C563B327A0530F0038D61C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C563B227A0530F0038D61C /* AppDelegate.swift */; };
 		80C563B527A0530F0038D61C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C563B427A0530F0038D61C /* SceneDelegate.swift */; };
 		80C563B727A0530F0038D61C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C563B627A0530F0038D61C /* ViewController.swift */; };
@@ -27,6 +29,8 @@
 /* Begin PBXFileReference section */
 		802BAF3627A0AC3C004B8A5D /* RoadDateView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoadDateView.xib; sourceTree = "<group>"; };
 		802BAF3827A0AC45004B8A5D /* RoadDateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoadDateView.swift; sourceTree = "<group>"; };
+		802BAF3B27A0BE28004B8A5D /* RoundTripView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoundTripView.xib; sourceTree = "<group>"; };
+		802BAF3D27A0BE33004B8A5D /* RoundTripView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundTripView.swift; sourceTree = "<group>"; };
 		80C563AF27A0530F0038D61C /* OBilet-Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OBilet-Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		80C563B227A0530F0038D61C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80C563B427A0530F0038D61C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +68,15 @@
 			path = RoadDateView;
 			sourceTree = "<group>";
 		};
+		802BAF3A27A0BD4C004B8A5D /* RoundTripView */ = {
+			isa = PBXGroup;
+			children = (
+				802BAF3B27A0BE28004B8A5D /* RoundTripView.xib */,
+				802BAF3D27A0BE33004B8A5D /* RoundTripView.swift */,
+			);
+			path = RoundTripView;
+			sourceTree = "<group>";
+		};
 		80C563A627A0530F0038D61C = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +112,7 @@
 		80C563C627A058BB0038D61C /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				802BAF3A27A0BD4C004B8A5D /* RoundTripView */,
 				802BAF3527A0AB57004B8A5D /* RoadDateView */,
 				80C563D527A064890038D61C /* RoadCityView */,
 				80C563CC27A05E0A0038D61C /* TicketStatusView */,
@@ -211,6 +225,7 @@
 				80C563CE27A05E230038D61C /* TicketStatusView.xib in Resources */,
 				80C563BF27A053110038D61C /* LaunchScreen.storyboard in Resources */,
 				80C563BC27A053110038D61C /* Assets.xcassets in Resources */,
+				802BAF3C27A0BE28004B8A5D /* RoundTripView.xib in Resources */,
 				80C563D727A07DB70038D61C /* RoadCityView.xib in Resources */,
 				80C563BA27A0530F0038D61C /* Main.storyboard in Resources */,
 				80C563CB27A059720038D61C /* NavigationBar.xib in Resources */,
@@ -232,6 +247,7 @@
 				80C563D927A07DC20038D61C /* RoadCityView.swift in Sources */,
 				80C563B527A0530F0038D61C /* SceneDelegate.swift in Sources */,
 				80C563C927A059590038D61C /* NavigationBar.swift in Sources */,
+				802BAF3E27A0BE33004B8A5D /* RoundTripView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

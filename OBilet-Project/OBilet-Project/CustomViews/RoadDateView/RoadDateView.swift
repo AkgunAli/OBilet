@@ -29,6 +29,10 @@ final class RoadDateView: UIView{
         view.translatesAutoresizingMaskIntoConstraints = false
         addSubview(view)
         setupLayout()
+        setDatePickerUI()
+    }
+    
+    func setDatePickerUI(){
         datePicker = UIDatePicker.init(frame: CGRect(x: 0, y: 0, width: view.bounds.size.width, height: 200))
         datePicker.addTarget(self, action: #selector(self.dateChanged), for: .allEvents)
         dateInput.inputView = datePicker
