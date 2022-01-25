@@ -7,15 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		802BAF3727A0AC3C004B8A5D /* RoadDateView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 802BAF3627A0AC3C004B8A5D /* RoadDateView.xib */; };
+		802BAF3927A0AC45004B8A5D /* RoadDateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802BAF3827A0AC45004B8A5D /* RoadDateView.swift */; };
 		80C563B327A0530F0038D61C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C563B227A0530F0038D61C /* AppDelegate.swift */; };
 		80C563B527A0530F0038D61C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C563B427A0530F0038D61C /* SceneDelegate.swift */; };
 		80C563B727A0530F0038D61C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C563B627A0530F0038D61C /* ViewController.swift */; };
 		80C563BA27A0530F0038D61C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80C563B827A0530F0038D61C /* Main.storyboard */; };
 		80C563BC27A053110038D61C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80C563BB27A053110038D61C /* Assets.xcassets */; };
 		80C563BF27A053110038D61C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80C563BD27A053110038D61C /* LaunchScreen.storyboard */; };
+		80C563C927A059590038D61C /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C563C827A059590038D61C /* NavigationBar.swift */; };
+		80C563CB27A059720038D61C /* NavigationBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80C563CA27A059720038D61C /* NavigationBar.xib */; };
+		80C563CE27A05E230038D61C /* TicketStatusView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80C563CD27A05E230038D61C /* TicketStatusView.xib */; };
+		80C563D027A05E2A0038D61C /* TicketStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C563CF27A05E2A0038D61C /* TicketStatusView.swift */; };
+		80C563D427A0633A0038D61C /* ButtonExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C563D327A0633A0038D61C /* ButtonExtensions.swift */; };
+		80C563D727A07DB70038D61C /* RoadCityView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80C563D627A07DB70038D61C /* RoadCityView.xib */; };
+		80C563D927A07DC20038D61C /* RoadCityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C563D827A07DC20038D61C /* RoadCityView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		802BAF3627A0AC3C004B8A5D /* RoadDateView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoadDateView.xib; sourceTree = "<group>"; };
+		802BAF3827A0AC45004B8A5D /* RoadDateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoadDateView.swift; sourceTree = "<group>"; };
 		80C563AF27A0530F0038D61C /* OBilet-Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OBilet-Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		80C563B227A0530F0038D61C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80C563B427A0530F0038D61C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +35,13 @@
 		80C563BB27A053110038D61C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		80C563BE27A053110038D61C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		80C563C027A053110038D61C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80C563C827A059590038D61C /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
+		80C563CA27A059720038D61C /* NavigationBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NavigationBar.xib; sourceTree = "<group>"; };
+		80C563CD27A05E230038D61C /* TicketStatusView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TicketStatusView.xib; sourceTree = "<group>"; };
+		80C563CF27A05E2A0038D61C /* TicketStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketStatusView.swift; sourceTree = "<group>"; };
+		80C563D327A0633A0038D61C /* ButtonExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonExtensions.swift; sourceTree = "<group>"; };
+		80C563D627A07DB70038D61C /* RoadCityView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoadCityView.xib; sourceTree = "<group>"; };
+		80C563D827A07DC20038D61C /* RoadCityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoadCityView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +55,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		802BAF3527A0AB57004B8A5D /* RoadDateView */ = {
+			isa = PBXGroup;
+			children = (
+				802BAF3627A0AC3C004B8A5D /* RoadDateView.xib */,
+				802BAF3827A0AC45004B8A5D /* RoadDateView.swift */,
+			);
+			path = RoadDateView;
+			sourceTree = "<group>";
+		};
 		80C563A627A0530F0038D61C = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +83,8 @@
 		80C563B127A0530F0038D61C /* OBilet-Project */ = {
 			isa = PBXGroup;
 			children = (
+				80C563D127A0630E0038D61C /* Support */,
+				80C563C627A058BB0038D61C /* CustomViews */,
 				80C563B227A0530F0038D61C /* AppDelegate.swift */,
 				80C563B427A0530F0038D61C /* SceneDelegate.swift */,
 				80C563B627A0530F0038D61C /* ViewController.swift */,
@@ -65,6 +94,60 @@
 				80C563C027A053110038D61C /* Info.plist */,
 			);
 			path = "OBilet-Project";
+			sourceTree = "<group>";
+		};
+		80C563C627A058BB0038D61C /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				802BAF3527A0AB57004B8A5D /* RoadDateView */,
+				80C563D527A064890038D61C /* RoadCityView */,
+				80C563CC27A05E0A0038D61C /* TicketStatusView */,
+				80C563C727A058D20038D61C /* NavigationBar */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		80C563C727A058D20038D61C /* NavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				80C563C827A059590038D61C /* NavigationBar.swift */,
+				80C563CA27A059720038D61C /* NavigationBar.xib */,
+			);
+			path = NavigationBar;
+			sourceTree = "<group>";
+		};
+		80C563CC27A05E0A0038D61C /* TicketStatusView */ = {
+			isa = PBXGroup;
+			children = (
+				80C563CD27A05E230038D61C /* TicketStatusView.xib */,
+				80C563CF27A05E2A0038D61C /* TicketStatusView.swift */,
+			);
+			path = TicketStatusView;
+			sourceTree = "<group>";
+		};
+		80C563D127A0630E0038D61C /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				80C563D227A063210038D61C /* Extensions */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		80C563D227A063210038D61C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				80C563D327A0633A0038D61C /* ButtonExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		80C563D527A064890038D61C /* RoadCityView */ = {
+			isa = PBXGroup;
+			children = (
+				80C563D627A07DB70038D61C /* RoadCityView.xib */,
+				80C563D827A07DC20038D61C /* RoadCityView.swift */,
+			);
+			path = RoadCityView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,9 +207,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				802BAF3727A0AC3C004B8A5D /* RoadDateView.xib in Resources */,
+				80C563CE27A05E230038D61C /* TicketStatusView.xib in Resources */,
 				80C563BF27A053110038D61C /* LaunchScreen.storyboard in Resources */,
 				80C563BC27A053110038D61C /* Assets.xcassets in Resources */,
+				80C563D727A07DB70038D61C /* RoadCityView.xib in Resources */,
 				80C563BA27A0530F0038D61C /* Main.storyboard in Resources */,
+				80C563CB27A059720038D61C /* NavigationBar.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +225,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				80C563B727A0530F0038D61C /* ViewController.swift in Sources */,
+				80C563D027A05E2A0038D61C /* TicketStatusView.swift in Sources */,
 				80C563B327A0530F0038D61C /* AppDelegate.swift in Sources */,
+				80C563D427A0633A0038D61C /* ButtonExtensions.swift in Sources */,
+				802BAF3927A0AC45004B8A5D /* RoadDateView.swift in Sources */,
+				80C563D927A07DC20038D61C /* RoadCityView.swift in Sources */,
 				80C563B527A0530F0038D61C /* SceneDelegate.swift in Sources */,
+				80C563C927A059590038D61C /* NavigationBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
