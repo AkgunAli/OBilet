@@ -16,7 +16,7 @@ final class RoadCityView: UIView{
     
     var source : [String] = [""]
     let picker = UIPickerView()
-    
+    var placeholderText : String?
     override func awakeFromNib() {
         initWithNib()
         picker.delegate = self
@@ -31,7 +31,7 @@ final class RoadCityView: UIView{
         setupLayout()
         roadCityInput.inputView = picker
         roadCityInput.tintColor = UIColor.clear
-        
+        roadCityInput.placeholder = placeholderText
     }
     private func setupLayout() {
         NSLayoutConstraint.activate(

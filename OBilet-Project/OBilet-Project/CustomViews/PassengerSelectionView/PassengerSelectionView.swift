@@ -1,5 +1,5 @@
 //
-//  RoundTripView.swift
+//  PassengerSelectionView.swift
 //  OBilet-Project
 //
 //  Created by Ali Akgün on 26.01.2022.
@@ -7,23 +7,19 @@
 
 import Foundation
 import UIKit
-
-final class RoundTripView: UIView{
+final class PassengerSelectionView: UIView{
     
-    private static let NIB_NAME = "RoundTripView"
+    private static let NIB_NAME = "PassengerSelectionView"
     @IBOutlet var view: UIView!
-    @IBOutlet weak var imageView: UIView!
-    var imageBool : Bool = false
     override func awakeFromNib() {
         initWithNib()
     }
 
     private func initWithNib() {
-        Bundle.main.loadNibNamed(RoundTripView.NIB_NAME, owner: self, options: nil)
+        Bundle.main.loadNibNamed(PassengerSelectionView.NIB_NAME, owner: self, options: nil)
         view.translatesAutoresizingMaskIntoConstraints = false
         addSubview(view)
         setupLayout()
-        imageView.isHidden = imageBool
     }
 
     

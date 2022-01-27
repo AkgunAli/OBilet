@@ -10,14 +10,12 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TicketStatusView" customModule="OBilet_Project" customModuleProvider="target">
             <connections>
-                <outlet property="leftButton" destination="Ngm-Hy-xFm" id="xYG-dH-Y6S"/>
-                <outlet property="leftButtonImage" destination="sQe-PL-237" id="LLh-OI-wWI"/>
-                <outlet property="leftButtonMainView" destination="PaH-7g-MwD" id="pIo-0s-Ckt"/>
-                <outlet property="leftButtonView" destination="lSs-bk-nCc" id="V53-IW-enQ"/>
-                <outlet property="rightButton" destination="VDr-j6-PR6" id="1HN-jy-kic"/>
-                <outlet property="rightButtonImage" destination="RFZ-67-PAX" id="nRb-yJ-9qq"/>
-                <outlet property="rightButtonMainView" destination="FlE-xB-sNj" id="wy1-Kd-ECp"/>
-                <outlet property="rightButtonView" destination="v7f-Wq-iN9" id="J11-4P-wPc"/>
+                <outlet property="leftButton" destination="VDr-j6-PR6" id="YCu-qs-qul"/>
+                <outlet property="leftButtonImage" destination="RFZ-67-PAX" id="UMF-ad-K18"/>
+                <outlet property="leftButtonView" destination="v7f-Wq-iN9" id="4DX-LO-8ut"/>
+                <outlet property="rightButton" destination="Ngm-Hy-xFm" id="xRk-9Z-Lgg"/>
+                <outlet property="rightButtonImage" destination="sQe-PL-237" id="wWf-JT-0Mb"/>
+                <outlet property="rightButtonView" destination="lSs-bk-nCc" id="KWf-0m-BEm"/>
                 <outlet property="view" destination="iN0-l3-epB" id="GOj-Fk-qV9"/>
             </connections>
         </placeholder>
@@ -29,74 +27,25 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zyI-wb-NS3" userLabel="contentView">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
                     <subviews>
-                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="UBo-ta-FPh">
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="UBo-ta-FPh">
                             <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
                             <subviews>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PaH-7g-MwD" userLabel="leftButtonMainView">
-                                    <rect key="frame" x="0.0" y="0.0" width="207" height="50"/>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FlE-xB-sNj" userLabel="leftButtonMainView">
+                                    <rect key="frame" x="0.0" y="0.0" width="202" height="50"/>
                                     <subviews>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lSs-bk-nCc" userLabel="leftButtonView">
-                                            <rect key="frame" x="8" y="4" width="199" height="42"/>
-                                            <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ngm-Hy-xFm">
-                                                    <rect key="frame" x="32" y="7" width="159" height="28"/>
-                                                    <state key="normal" title="Otobüs Bileti">
-                                                        <color key="titleColor" red="0.36470588235294116" green="0.40784313725490196" blue="0.43137254901960786" alpha="1" colorSpace="calibratedRGB"/>
-                                                    </state>
-                                                    <connections>
-                                                        <action selector="leftButtonAction:" destination="-1" eventType="touchUpInside" id="8By-jx-xyf"/>
-                                                    </connections>
-                                                </button>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bus" translatesAutoresizingMaskIntoConstraints="NO" id="sQe-PL-237">
-                                                    <rect key="frame" x="8" y="13" width="16" height="16"/>
-                                                </imageView>
-                                            </subviews>
-                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <constraints>
-                                                <constraint firstItem="sQe-PL-237" firstAttribute="centerY" secondItem="Ngm-Hy-xFm" secondAttribute="centerY" id="6z9-7b-j2S"/>
-                                                <constraint firstItem="Ngm-Hy-xFm" firstAttribute="trailing" secondItem="lSs-bk-nCc" secondAttribute="trailingMargin" id="GoW-K1-dEm"/>
-                                                <constraint firstItem="sQe-PL-237" firstAttribute="leading" secondItem="lSs-bk-nCc" secondAttribute="leadingMargin" id="Xll-CR-QfP"/>
-                                                <constraint firstItem="Ngm-Hy-xFm" firstAttribute="leading" secondItem="sQe-PL-237" secondAttribute="trailing" constant="8" symbolic="YES" id="dmj-iY-tka"/>
-                                                <constraint firstItem="sQe-PL-237" firstAttribute="centerY" secondItem="lSs-bk-nCc" secondAttribute="centerY" id="fys-CH-NDT"/>
-                                                <constraint firstItem="Ngm-Hy-xFm" firstAttribute="top" secondItem="lSs-bk-nCc" secondAttribute="top" constant="7" id="iJ5-Ob-IxG"/>
-                                            </constraints>
-                                        </view>
-                                    </subviews>
-                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <constraints>
-                                        <constraint firstItem="lSs-bk-nCc" firstAttribute="centerY" secondItem="PaH-7g-MwD" secondAttribute="centerY" id="Gft-F5-aTC"/>
-                                        <constraint firstItem="lSs-bk-nCc" firstAttribute="leading" secondItem="PaH-7g-MwD" secondAttribute="leadingMargin" id="Gx9-D8-iWD"/>
-                                        <constraint firstAttribute="trailing" secondItem="lSs-bk-nCc" secondAttribute="trailing" id="dVc-gs-vpk"/>
-                                        <constraint firstItem="lSs-bk-nCc" firstAttribute="top" secondItem="PaH-7g-MwD" secondAttribute="top" constant="4" id="eLz-on-sOD"/>
-                                    </constraints>
-                                    <userDefinedRuntimeAttributes>
-                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                            <real key="value" value="20"/>
-                                        </userDefinedRuntimeAttribute>
-                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                            <real key="value" value="1"/>
-                                        </userDefinedRuntimeAttribute>
-                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                            <color key="value" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </userDefinedRuntimeAttribute>
-                                    </userDefinedRuntimeAttributes>
-                                </view>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FlE-xB-sNj" userLabel="rightButtonMainView">
-                                    <rect key="frame" x="207" y="0.0" width="207" height="50"/>
-                                    <subviews>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v7f-Wq-iN9" userLabel="rightButtonView">
-                                            <rect key="frame" x="0.0" y="4" width="203" height="42"/>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v7f-Wq-iN9" userLabel="leftButtonView">
+                                            <rect key="frame" x="0.0" y="4" width="198" height="42"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VDr-j6-PR6">
-                                                    <rect key="frame" x="32" y="7" width="163" height="28"/>
-                                                    <state key="normal" title="Uçak Bileti">
+                                                    <rect key="frame" x="32" y="7" width="158" height="28"/>
+                                                    <state key="normal" title="Otobüs Bileti">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </state>
                                                     <connections>
-                                                        <action selector="rightButtonAction:" destination="-1" eventType="touchUpInside" id="wZa-Y4-fvC"/>
+                                                        <action selector="leftButtonAction:" destination="-1" eventType="touchUpInside" id="89u-oz-hcN"/>
                                                     </connections>
                                                 </button>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plane" translatesAutoresizingMaskIntoConstraints="NO" id="RFZ-67-PAX">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bus" translatesAutoresizingMaskIntoConstraints="NO" id="RFZ-67-PAX">
                                                     <rect key="frame" x="8" y="14" width="16" height="16"/>
                                                     <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </imageView>
@@ -129,6 +78,55 @@
                                         <constraint firstItem="v7f-Wq-iN9" firstAttribute="leading" secondItem="FlE-xB-sNj" secondAttribute="leading" id="bjT-VY-7yV"/>
                                         <constraint firstItem="v7f-Wq-iN9" firstAttribute="top" secondItem="FlE-xB-sNj" secondAttribute="top" constant="4" id="rhi-hc-fGt"/>
                                         <constraint firstAttribute="trailing" secondItem="v7f-Wq-iN9" secondAttribute="trailing" constant="4" id="yUb-m7-Gw1"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PaH-7g-MwD" userLabel="rightButtonMainView">
+                                    <rect key="frame" x="212" y="0.0" width="202" height="50"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lSs-bk-nCc" userLabel="rightButtonView">
+                                            <rect key="frame" x="8" y="4" width="198" height="42"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ngm-Hy-xFm">
+                                                    <rect key="frame" x="32" y="7" width="154" height="28"/>
+                                                    <state key="normal" title="Uçak Bileti">
+                                                        <color key="titleColor" red="0.36470588235294116" green="0.40784313725490196" blue="0.43137254901960786" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="rightButtonAction:" destination="-1" eventType="touchUpInside" id="Pf1-Xb-2Sg"/>
+                                                    </connections>
+                                                </button>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plane" translatesAutoresizingMaskIntoConstraints="NO" id="sQe-PL-237">
+                                                    <rect key="frame" x="8" y="13" width="16" height="16"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="sQe-PL-237" firstAttribute="centerY" secondItem="Ngm-Hy-xFm" secondAttribute="centerY" id="6z9-7b-j2S"/>
+                                                <constraint firstItem="Ngm-Hy-xFm" firstAttribute="trailing" secondItem="lSs-bk-nCc" secondAttribute="trailingMargin" constant="-4" id="GoW-K1-dEm"/>
+                                                <constraint firstItem="sQe-PL-237" firstAttribute="leading" secondItem="lSs-bk-nCc" secondAttribute="leadingMargin" id="Xll-CR-QfP"/>
+                                                <constraint firstItem="Ngm-Hy-xFm" firstAttribute="leading" secondItem="sQe-PL-237" secondAttribute="trailing" constant="8" symbolic="YES" id="dmj-iY-tka"/>
+                                                <constraint firstItem="sQe-PL-237" firstAttribute="centerY" secondItem="lSs-bk-nCc" secondAttribute="centerY" id="fys-CH-NDT"/>
+                                                <constraint firstItem="Ngm-Hy-xFm" firstAttribute="top" secondItem="lSs-bk-nCc" secondAttribute="top" constant="7" id="iJ5-Ob-IxG"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                    <real key="value" value="1"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="20"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                    <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="lSs-bk-nCc" firstAttribute="centerY" secondItem="PaH-7g-MwD" secondAttribute="centerY" id="Gft-F5-aTC"/>
+                                        <constraint firstItem="lSs-bk-nCc" firstAttribute="leading" secondItem="PaH-7g-MwD" secondAttribute="leadingMargin" id="Gx9-D8-iWD"/>
+                                        <constraint firstAttribute="trailing" secondItem="lSs-bk-nCc" secondAttribute="trailing" constant="-4" id="dVc-gs-vpk"/>
+                                        <constraint firstItem="lSs-bk-nCc" firstAttribute="top" secondItem="PaH-7g-MwD" secondAttribute="top" constant="4" id="eLz-on-sOD"/>
                                     </constraints>
                                 </view>
                             </subviews>
