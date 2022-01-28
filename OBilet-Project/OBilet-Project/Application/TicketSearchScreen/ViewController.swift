@@ -67,7 +67,13 @@ class ViewController: UIViewController {
 
         print("roadDateView.datePicker.date",roadDateView.datePicker.date)
         viewModel.getBusJourneys(originId:selectedBusParentIdFromWhere, destinationId: selectedBusParentIdToWhere, departureDate: roadDateView.selectedDate(), completion: {
-            
+            DispatchQueue.main.async {
+                let vc = self.storyboard?.instantiateViewController(withIdentifier: "TicketResultScreenVC") as! TicketResultScreenVC
+                vc.viewModel.busJourneysResponse = self.viewModel.busJourneysResponse
+                vc.viewModel.selectedJourneyDate = self.roadDateView.selectedDate(isDetailDate: true)
+                vc.modalPresentationStyle = .fullScreen
+                self.present(vc, animated: true, completion: nil)
+            }
         })
     }
     

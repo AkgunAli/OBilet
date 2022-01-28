@@ -163,10 +163,10 @@
             </objects>
             <point key="canvasLocation" x="11.594202898550726" y="118.52678571428571"/>
         </scene>
-        <!--View Controller-->
+        <!--Ticket Result ScreenVC-->
         <scene sceneID="rZL-58-Tfs">
             <objects>
-                <viewController id="tta-WQ-dOl" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TicketResultScreenVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="tta-WQ-dOl" customClass="TicketResultScreenVC" customModule="OBilet_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BT1-QU-0x9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -178,19 +178,31 @@
                                     <constraint firstAttribute="height" constant="100" id="py5-Sg-azn"/>
                                 </constraints>
                             </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sIy-V8-Wut">
+                                <rect key="frame" x="0.0" y="100" width="414" height="796"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="7Xm-JL-ogw"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="sIy-V8-Wut" firstAttribute="leading" secondItem="7Xm-JL-ogw" secondAttribute="leading" id="8oo-2V-cyn"/>
+                            <constraint firstItem="sIy-V8-Wut" firstAttribute="top" secondItem="b0J-ek-oe4" secondAttribute="bottom" id="BhI-Pv-Kj5"/>
+                            <constraint firstItem="sIy-V8-Wut" firstAttribute="trailing" secondItem="7Xm-JL-ogw" secondAttribute="trailing" id="ChF-1j-JiY"/>
                             <constraint firstItem="b0J-ek-oe4" firstAttribute="leading" secondItem="7Xm-JL-ogw" secondAttribute="leading" id="NnN-8S-lRg"/>
                             <constraint firstItem="b0J-ek-oe4" firstAttribute="top" secondItem="BT1-QU-0x9" secondAttribute="top" id="Qcd-qu-Oyt"/>
+                            <constraint firstAttribute="bottom" secondItem="sIy-V8-Wut" secondAttribute="bottom" id="c26-ta-sum"/>
                             <constraint firstItem="b0J-ek-oe4" firstAttribute="trailing" secondItem="7Xm-JL-ogw" secondAttribute="trailing" id="rQP-El-sIr"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="navigationBar" destination="b0J-ek-oe4" id="xap-1a-sgX"/>
+                        <outlet property="tableView" destination="sIy-V8-Wut" id="xhP-Jr-Zwz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Kr-sR-ydN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="855" y="114"/>
+            <point key="canvasLocation" x="853.62318840579712" y="113.83928571428571"/>
         </scene>
     </scenes>
     <resources>

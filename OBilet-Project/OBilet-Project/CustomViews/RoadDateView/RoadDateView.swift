@@ -72,8 +72,9 @@ final class RoadDateView: UIView{
         stringFromDate = dateFormater.string(from: Date()) as String
         dateInput.text = stringFromDate
     }
-    func selectedDate() -> String {
+    func selectedDate(isDetailDate:Bool = false ) -> String {
         dateFormater.dateFormat = "yyyy-MM-dd"
+        if isDetailDate {dateFormater.dateFormat = "dd MMMM EEEE"}
         return dateFormater.string(from:  datePicker.date) as String
     }
     private func setupLayout() {

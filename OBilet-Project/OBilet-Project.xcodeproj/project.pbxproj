@@ -28,6 +28,10 @@
 		80C3D9AA27A3E9D000B42F82 /* TicketSearchVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C3D9A927A3E9D000B42F82 /* TicketSearchVM.swift */; };
 		80C3D9AC27A40FA800B42F82 /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C3D9AB27A40FA800B42F82 /* DateExtensions.swift */; };
 		80C3D9AE27A4342900B42F82 /* BusJourneysResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C3D9AD27A4342900B42F82 /* BusJourneysResponse.swift */; };
+		80C3D9B127A4481C00B42F82 /* TicketResultScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C3D9B027A4481C00B42F82 /* TicketResultScreenVC.swift */; };
+		80C3D9B327A4483000B42F82 /* TicketResultScreenVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C3D9B227A4483000B42F82 /* TicketResultScreenVM.swift */; };
+		80C3D9B727A44A0300B42F82 /* TicketDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C3D9B527A44A0300B42F82 /* TicketDetailView.swift */; };
+		80C3D9B827A44A0300B42F82 /* TicketDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80C3D9B627A44A0300B42F82 /* TicketDetailView.xib */; };
 		80C563B327A0530F0038D61C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C563B227A0530F0038D61C /* AppDelegate.swift */; };
 		80C563B527A0530F0038D61C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C563B427A0530F0038D61C /* SceneDelegate.swift */; };
 		80C563B727A0530F0038D61C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C563B627A0530F0038D61C /* ViewController.swift */; };
@@ -66,6 +70,10 @@
 		80C3D9A927A3E9D000B42F82 /* TicketSearchVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketSearchVM.swift; sourceTree = "<group>"; };
 		80C3D9AB27A40FA800B42F82 /* DateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
 		80C3D9AD27A4342900B42F82 /* BusJourneysResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusJourneysResponse.swift; sourceTree = "<group>"; };
+		80C3D9B027A4481C00B42F82 /* TicketResultScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketResultScreenVC.swift; sourceTree = "<group>"; };
+		80C3D9B227A4483000B42F82 /* TicketResultScreenVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketResultScreenVM.swift; sourceTree = "<group>"; };
+		80C3D9B527A44A0300B42F82 /* TicketDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketDetailView.swift; sourceTree = "<group>"; };
+		80C3D9B627A44A0300B42F82 /* TicketDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TicketDetailView.xib; sourceTree = "<group>"; };
 		80C563AF27A0530F0038D61C /* OBilet-Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OBilet-Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		80C563B227A0530F0038D61C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80C563B427A0530F0038D61C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -138,6 +146,9 @@
 		8049949E27A2CC2700EBB0CB /* TicketResultScreen */ = {
 			isa = PBXGroup;
 			children = (
+				80C3D9B427A449DE00B42F82 /* Cell */,
+				80C3D9B027A4481C00B42F82 /* TicketResultScreenVC.swift */,
+				80C3D9B227A4483000B42F82 /* TicketResultScreenVM.swift */,
 			);
 			path = TicketResultScreen;
 			sourceTree = "<group>";
@@ -214,6 +225,15 @@
 				8061DE7927A0C8E200516A01 /* PassengerSelectionView.xib */,
 			);
 			path = PassengerSelectionView;
+			sourceTree = "<group>";
+		};
+		80C3D9B427A449DE00B42F82 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				80C3D9B527A44A0300B42F82 /* TicketDetailView.swift */,
+				80C3D9B627A44A0300B42F82 /* TicketDetailView.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		80C563A627A0530F0038D61C = {
@@ -387,6 +407,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				802BAF3727A0AC3C004B8A5D /* RoadDateView.xib in Resources */,
+				80C3D9B827A44A0300B42F82 /* TicketDetailView.xib in Resources */,
 				80C563CE27A05E230038D61C /* TicketStatusView.xib in Resources */,
 				8061DE7A27A0C8E200516A01 /* PassengerSelectionView.xib in Resources */,
 				80C563BF27A053110038D61C /* LaunchScreen.storyboard in Resources */,
@@ -449,6 +470,7 @@
 			files = (
 				8061DE7C27A0DB3D00516A01 /* ColorExtensions.swift in Sources */,
 				804994B127A2F4A900EBB0CB /* SessionModel.swift in Sources */,
+				80C3D9B327A4483000B42F82 /* TicketResultScreenVM.swift in Sources */,
 				80C3D9A827A3DFDF00B42F82 /* BaseModel.swift in Sources */,
 				804994B627A35A4100EBB0CB /* UserDefaultsExtensions.swift in Sources */,
 				80C563B727A0530F0038D61C /* ViewController.swift in Sources */,
@@ -465,7 +487,9 @@
 				80C3D9AE27A4342900B42F82 /* BusJourneysResponse.swift in Sources */,
 				80C563D427A0633A0038D61C /* ViewExtensions.swift in Sources */,
 				802BAF3927A0AC45004B8A5D /* RoadDateView.swift in Sources */,
+				80C3D9B727A44A0300B42F82 /* TicketDetailView.swift in Sources */,
 				80C563D927A07DC20038D61C /* RoadCityView.swift in Sources */,
+				80C3D9B127A4481C00B42F82 /* TicketResultScreenVC.swift in Sources */,
 				80C3D9A427A3DD6500B42F82 /* BusAPI.swift in Sources */,
 				80C563B527A0530F0038D61C /* SceneDelegate.swift in Sources */,
 				80C3D9A627A3DE9600B42F82 /* BusLocationResponse.swift in Sources */,

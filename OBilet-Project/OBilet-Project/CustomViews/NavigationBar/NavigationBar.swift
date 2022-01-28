@@ -19,16 +19,12 @@ final class NavigationBar: UIView, NavigationBarDelegate{
     @IBOutlet var view: UIView!
     @IBOutlet weak var leftButton: UIButton!
     @IBOutlet weak var titleRotation: UILabel!
-//    @IBOutlet private weak var titleLabel: UILabel!
     @IBOutlet weak var titleTime: UILabel!
     
     var vc : UIViewController?
-//    var title: String = "" {
-//        didSet {
-//            titleLabel.text = title
-//        }
-//    }
-//
+    var titleRotationText: String = ""
+    var titleTimeText: String = ""
+    var isTitleHidden: Bool = true
     var isLeftButtonHidden: Bool {
         set {
             leftButton.isHidden = newValue
@@ -37,9 +33,12 @@ final class NavigationBar: UIView, NavigationBarDelegate{
             return leftButton.isHidden
         }
     }
-    
     override func awakeFromNib() {
         initWithNib()
+        titleRotation.text  = titleRotationText
+        titleTime.text = titleTimeText
+        titleRotation.isHidden = isTitleHidden
+        titleTime.isHidden = isTitleHidden
     }
     
     private func initWithNib() {
