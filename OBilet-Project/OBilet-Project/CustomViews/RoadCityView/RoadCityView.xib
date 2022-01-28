@@ -11,6 +11,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RoadCityView" customModule="OBilet_Project" customModuleProvider="target">
             <connections>
                 <outlet property="roadCityDescription" destination="sHs-y2-01o" id="4Uw-Ba-uMN"/>
+                <outlet property="roadCityImage" destination="ZHp-Vl-kpT" id="GtJ-8j-QAz"/>
                 <outlet property="roadCityInput" destination="iAV-qH-rdX" id="FBH-dB-bic"/>
                 <outlet property="view" destination="iN0-l3-epB" id="ZHR-Q7-Vkq"/>
             </connections>

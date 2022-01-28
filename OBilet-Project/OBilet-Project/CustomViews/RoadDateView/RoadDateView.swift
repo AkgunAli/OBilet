@@ -19,7 +19,8 @@ final class RoadDateView: UIView{
     @IBOutlet weak var dateInput: UITextField!
     @IBOutlet weak var componentImage: UIImageView!
     var datePicker : UIDatePicker!
-
+    let dateFormater: DateFormatter = DateFormatter()
+    var stringFromDate: String = ""
     override func awakeFromNib() {
         initWithNib()
     }
@@ -36,11 +37,17 @@ final class RoadDateView: UIView{
         datePicker = UIDatePicker.init(frame: CGRect(x: 0, y: 0, width: view.bounds.size.width, height: 200))
         datePicker.addTarget(self, action: #selector(self.dateChanged), for: .allEvents)
         dateInput.inputView = datePicker
+        datePicker.timeZone = NSTimeZone.local
+        datePicker.locale = Locale(identifier: "tr")
+        dateFormater.locale = Locale(identifier: "tr")
+        dateFormater.dateFormat = "dd MMMM yyyy EEEE"
+        datePicker.datePickerMode = .date
         dateInput.tintColor = .clear
-        let doneButton = UIBarButtonItem.init(title: "Done", style: .done, target: self, action: #selector(self.datePickerDone))
+        let doneButton = UIBarButtonItem.init(title: "Tamam", style: .done, target: self, action: #selector(self.datePickerDone))
         let toolBar = UIToolbar.init(frame: CGRect(x: 0, y: 0, width: view.bounds.size.width, height: 44))
         toolBar.setItems([UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.flexibleSpace, target: nil, action: nil), doneButton], animated: true)
         dateInput.inputAccessoryView = toolBar
+        getCurrentDate()
     }
 
     @objc func datePickerDone() {
@@ -48,14 +55,20 @@ final class RoadDateView: UIView{
     }
 
     @objc func dateChanged() {
-        dateInput.text = "\(datePicker.date)"
+        stringFromDate = dateFormater.string(from: self.datePicker.date) as String
+        dateInput.text = stringFromDate
     }
     
     @IBAction func todayButtonAction(_ sender: Any) {
-        
+        getCurrentDate()
     }
     @IBAction func tomorrowButtonAction(_ sender: Any) {
-        
+        stringFromDate = dateFormater.string(from: Date.tomorrow) as String
+        dateInput.text = stringFromDate
+    }
+    func getCurrentDate(){
+        stringFromDate = dateFormater.string(from: Date()) as String
+        dateInput.text = stringFromDate
     }
     private func setupLayout() {
         NSLayoutConstraint.activate(

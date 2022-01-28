@@ -44,10 +44,13 @@
                                     <constraint firstAttribute="height" constant="50" id="m9g-Mm-chk"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VQM-1i-Prv">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VQM-1i-Prv" userLabel="changeButton">
                                 <rect key="frame" x="344" y="185" width="35" height="34"/>
                                 <color key="tintColor" red="0.36470588240000001" green="0.40784313729999999" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" image="arrows"/>
+                                <connections>
+                                    <action selector="changeButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j9J-6y-3QR"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="mZC-qI-Bv8">
                                 <rect key="frame" x="16" y="288" width="382" height="80"/>

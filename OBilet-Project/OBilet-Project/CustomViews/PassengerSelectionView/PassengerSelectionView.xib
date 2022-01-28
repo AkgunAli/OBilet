@@ -24,8 +24,8 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LhQ-zo-zV2">
                             <rect key="frame" x="8" y="15" width="20" height="20"/>
                             <subviews>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="location-empty" translatesAutoresizingMaskIntoConstraints="NO" id="OMG-9L-9gy">
-                                    <rect key="frame" x="0.0" y="3" width="20" height="20"/>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="OMG-9L-9gy">
+                                    <rect key="frame" x="0.0" y="4.5" width="20" height="17"/>
                                     <color key="tintColor" red="0.61568627450000002" green="0.61568627450000002" blue="0.61568627450000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </imageView>
                             </subviews>
@@ -81,7 +81,7 @@
         </view>
     </objects>
     <resources>
-        <image name="location-empty" width="24" height="24"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -13,10 +13,14 @@ final class RoadCityView: UIView{
     @IBOutlet var view: UIView!
     @IBOutlet weak var roadCityDescription: UILabel!
     @IBOutlet weak var roadCityInput: UITextField!
+    @IBOutlet weak var roadCityImage: UIImageView!
     
     var source : [String] = [""]
     let picker = UIPickerView()
     var placeholderText : String?
+    var image: UIImage?
+    var selectedIndex : Int?
+    var changed = false
     override func awakeFromNib() {
         initWithNib()
         picker.delegate = self
@@ -32,6 +36,12 @@ final class RoadCityView: UIView{
         roadCityInput.inputView = picker
         roadCityInput.tintColor = UIColor.clear
         roadCityInput.placeholder = placeholderText
+        roadCityImage.image = self.image
+    }
+    func setUI (source : [String] , placeholderText : String? , image: UIImage){
+        self.source = source
+        self.placeholderText = placeholderText
+        self.image = image
     }
     private func setupLayout() {
         NSLayoutConstraint.activate(
@@ -57,6 +67,11 @@ final class RoadCityView: UIView{
     @objc func dismissPicker() {
         view.endEditing(true)
     }
+    func setNewPicker(index : Int){
+        picker.selectRow(index, inComponent: 0, animated: true)
+        roadCityInput.text = source[index]
+        selectedIndex = index
+    }
 }
 
 extension RoadCityView : UIPickerViewDelegate, UIPickerViewDataSource{
@@ -73,6 +88,7 @@ extension RoadCityView : UIPickerViewDelegate, UIPickerViewDataSource{
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        selectedIndex = row
         roadCityInput.text = source[row]
     }
 }

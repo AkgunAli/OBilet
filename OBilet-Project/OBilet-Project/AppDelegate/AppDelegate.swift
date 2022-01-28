@@ -10,10 +10,12 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    let clientApi = ClientAPI()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        getSession()
         return true
     }
 
@@ -30,7 +32,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
-
-
+    
+    func getSession() {
+        clientApi.getSession(params: ["type":2,
+                                      "connection": [:],
+                                      "application":["version":"3.1.0.0","equipment-id":"DD2A0857-7C7D-4376-A83B-E045435E82BB"]], succeed: { response in
+            let userDefaults = UserDefaults.standard
+            do {
+                try userDefaults.setObjectt(response.dataObject, forKey: "sessionData")
+                print("response",response.dataObject?.sessionId)
+            } catch {
+                print(error.localizedDescription)
+            }
+        }, failed: { error in
+            print("")
+        })
+    }
 }
 
