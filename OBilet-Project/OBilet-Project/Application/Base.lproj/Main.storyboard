@@ -24,17 +24,17 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zvs-De-Zlp" customClass="RoadCityView" customModule="OBilet_Project" customModuleProvider="target">
-                                <rect key="frame" x="16" y="208" width="382" height="70"/>
+                                <rect key="frame" x="16" y="218" width="382" height="80"/>
                                 <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="grt-Q8-hGr"/>
+                                    <constraint firstAttribute="height" constant="80" id="grt-Q8-hGr"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w0M-Ku-MTz" customClass="RoadCityView" customModule="OBilet_Project" customModuleProvider="target">
-                                <rect key="frame" x="16" y="130" width="382" height="70"/>
+                                <rect key="frame" x="16" y="130" width="382" height="80"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="EZz-1B-l0G"/>
+                                    <constraint firstAttribute="height" constant="80" id="EZz-1B-l0G"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2PW-hv-zVx" customClass="TicketStatusView" customModule="OBilet_Project" customModuleProvider="target">
@@ -45,7 +45,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VQM-1i-Prv" userLabel="changeButton">
-                                <rect key="frame" x="344" y="185" width="35" height="34"/>
+                                <rect key="frame" x="344" y="195" width="35" height="44"/>
                                 <color key="tintColor" red="0.36470588240000001" green="0.40784313729999999" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" image="arrows"/>
                                 <connections>
@@ -53,7 +53,7 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="mZC-qI-Bv8">
-                                <rect key="frame" x="16" y="288" width="382" height="80"/>
+                                <rect key="frame" x="16" y="308" width="382" height="80"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hww-4y-PQs" customClass="RoadDateView" customModule="OBilet_Project" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="382" height="80"/>
@@ -91,7 +91,7 @@
                                 </subviews>
                             </stackView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xWN-49-PDH">
-                                <rect key="frame" x="20" y="487" width="374" height="355"/>
+                                <rect key="frame" x="20" y="507" width="374" height="335"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="86" id="7tg-vN-aLH"/>
@@ -101,8 +101,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gk5-KB-VKE">
-                                <rect key="frame" x="56" y="407" width="302" height="41"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gk5-KB-VKE">
+                                <rect key="frame" x="56" y="427" width="302" height="50"/>
                                 <color key="backgroundColor" red="0.1843137255" green="0.30588235289999999" blue="0.70588235290000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Kll-Sj-hmp"/>

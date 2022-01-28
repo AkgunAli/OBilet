@@ -34,13 +34,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func getSession() {
+        let id = UIDevice.current.identifierForVendor?.uuidString ?? "DD2A0857-7C7D-4376-A83B-E045435E82BB"
         clientApi.getSession(params: ["type":2,
                                       "connection": [:],
-                                      "application":["version":"3.1.0.0","equipment-id":"DD2A0857-7C7D-4376-A83B-E045435E82BB"]], succeed: { response in
+                                      "application":["version":"3.1.0.0","equipment-id":id]], succeed: { response in
             let userDefaults = UserDefaults.standard
             do {
                 try userDefaults.setObjectt(response.dataObject, forKey: "sessionData")
-                print("response",response.dataObject?.sessionId)
             } catch {
                 print(error.localizedDescription)
             }
