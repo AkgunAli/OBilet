@@ -1,0 +1,6 @@
+framework module Pods_OBilet_Project {
+  umbrella header "Pods-OBilet-Project-umbrella.h"
+
+  export *
+  module * { export * }
+}
