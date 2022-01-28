@@ -43,16 +43,16 @@
                             </constraints>
                         </view>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="dIN-jI-hDY">
-                            <rect key="frame" x="50" y="10" width="65.5" height="50"/>
+                            <rect key="frame" x="50" y="10" width="354" height="50"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nereden" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sHs-y2-01o">
-                                    <rect key="frame" x="0.0" y="0.0" width="65.5" height="20.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="354" height="20.5"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <color key="textColor" red="0.18431372549019609" green="0.30588235294117649" blue="0.70588235294117641" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iAV-qH-rdX">
-                                    <rect key="frame" x="0.0" y="20.5" width="65.5" height="29.5"/>
+                                    <rect key="frame" x="0.0" y="20.5" width="354" height="29.5"/>
                                     <color key="textColor" red="0.36470588235294116" green="0.40784313725490196" blue="0.43137254901960786" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <textInputTraits key="textInputTraits"/>
@@ -68,6 +68,7 @@
                         <constraint firstAttribute="bottom" secondItem="tbi-Xi-EpS" secondAttribute="bottom" constant="25" id="cfB-Sv-fA8"/>
                         <constraint firstItem="tbi-Xi-EpS" firstAttribute="leading" secondItem="gbn-IC-0fH" secondAttribute="leading" constant="10" id="iRl-iN-43L"/>
                         <constraint firstItem="dIN-jI-hDY" firstAttribute="top" secondItem="gbn-IC-0fH" secondAttribute="top" constant="10" id="vtg-Yk-Vaj"/>
+                        <constraint firstAttribute="trailing" secondItem="dIN-jI-hDY" secondAttribute="trailing" constant="10" id="wTr-z8-IYG"/>
                     </constraints>
                 </view>
             </subviews>
