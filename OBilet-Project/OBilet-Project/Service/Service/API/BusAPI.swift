@@ -30,14 +30,3 @@ class BusAPI {
                                failed: failed)
     }
 }
-
-
-//
-//{
-//    "data":null,
-//    "device-session":
-//    {"session-id": "PqtdftjloK3Kpka97+ILDzMa6D9740nggLiTzXiLlzA=",
-//    "device-id":"PqtdftjloK3Kpka97+ILDzMa6D9740nggLiTzXiLlzA="
-//    }, "date":"2016-03-11T11:33:00",
-//    "language":"tr-TR"
-//}

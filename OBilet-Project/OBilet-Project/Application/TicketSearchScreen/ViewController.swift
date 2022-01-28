@@ -22,8 +22,6 @@ class ViewController: UIViewController {
     }
     @IBOutlet weak var toWherePicker: RoadCityView!{
         didSet{
-//            toWherePicker.source = [ "test3","test4"]
-//            toWherePicker.placeholderText = "Ankara"
             toWherePicker.setUI(source: viewModel.toWhereArray, placeholderText: "İstanbul Avrupa", image: UIImage(named: "location-full")!)
 
         }
@@ -70,7 +68,6 @@ class ViewController: UIViewController {
         guard  let selectedBusParentIdFromWhere = fromWherePicker.selectedBusParentId,
                let selectedBusParentIdToWhere = toWherePicker.selectedBusParentId else { return }
 
-        print("roadDateView.datePicker.date",roadDateView.datePicker.date)
         viewModel.getBusJourneys(originId:selectedBusParentIdFromWhere, destinationId: selectedBusParentIdToWhere, departureDate: roadDateView.selectedDate(), completion: {
             DispatchQueue.main.async {
                 let vc = self.storyboard?.instantiateViewController(withIdentifier: "TicketResultScreenVC") as! TicketResultScreenVC

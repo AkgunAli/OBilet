@@ -43,25 +43,25 @@ final class TicketStatusView: UIView{
     func changeButtonUI(sender:UIButton){
         switch sender {
         case  leftButton:
-            leftButtonView.backgroundColor = UIColor(hexString: "2F4EB4")
+            leftButtonView.backgroundColor = UIColor(hexString: ColorConstant.DasboardButtonBlue)
             leftButton.setTitleColor(UIColor.white, for: .normal)
             leftButtonImage.tintColor = UIColor.white
 
-            rightButtonView.backgroundColor = UIColor(hexString: "FAFAFA")
-            rightButton.setTitleColor(UIColor(hexString: "5D686E"), for: .normal)
-            rightButtonImage.tintColor = UIColor(hexString: "5D686E")
+            rightButtonView.backgroundColor = UIColor(hexString: ColorConstant.DasboardButtonGrey)
+            rightButton.setTitleColor(UIColor(hexString: ColorConstant.DasboardButtonDarkGrey), for: .normal)
+            rightButtonImage.tintColor = UIColor(hexString: ColorConstant.DasboardButtonDarkGrey)
             selectedButtonStatus = .bus
             hiddenArray.forEach { item in
                 item.isHidden = item.accessibilityIdentifier == "RoadDateView" ? false : true
             }
         case  rightButton:
-            rightButtonView.backgroundColor = UIColor(hexString: "2F4EB4")
+            rightButtonView.backgroundColor = UIColor(hexString: ColorConstant.DasboardButtonBlue)
             rightButton.setTitleColor(UIColor.white, for: .normal)
             rightButtonImage.tintColor = UIColor.white
 
-            leftButtonView.backgroundColor = UIColor(hexString: "FAFAFA")
-            leftButton.setTitleColor(UIColor(hexString: "5D686E"), for: .normal)
-            leftButtonImage.tintColor = UIColor(hexString: "5D686E")
+            leftButtonView.backgroundColor = UIColor(hexString: ColorConstant.DasboardButtonGrey)
+            leftButton.setTitleColor(UIColor(hexString: ColorConstant.DasboardButtonDarkGrey), for: .normal)
+            leftButtonImage.tintColor = UIColor(hexString: ColorConstant.DasboardButtonDarkGrey)
             selectedButtonStatus = .plane
             hiddenArray.forEach { item in
                 item.isHidden = item.accessibilityIdentifier != "RoadDateView" ? false : true
