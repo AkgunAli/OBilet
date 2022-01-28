@@ -49,6 +49,11 @@ class ViewController: UIViewController {
             passengerSelectionView.setUI(source: viewModel.passengerAddArray, placeholderText: "Yolcu Ekle")
         }
     }
+    @IBOutlet weak var findTicketButton: UIButton!{
+        didSet{
+            findTicketButton.setTitle("Bileti Bul", for: UIControl.State.normal)
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

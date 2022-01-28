@@ -107,9 +107,20 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Kll-Sj-hmp"/>
                                 </constraints>
-                                <state key="normal" title="Bileti Bul">
+                                <state key="normal">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.1843137443" green="0.3058823645" blue="0.70588237050000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="findTicketButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qFK-dQ-up9"/>
                                 </connections>
@@ -148,6 +159,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="findTicketButton" destination="Gk5-KB-VKE" id="HcK-Cd-6vy"/>
                         <outlet property="fromWherePicker" destination="w0M-Ku-MTz" id="WpS-cx-GHn"/>
                         <outlet property="navigationBar" destination="S0e-eN-icX" id="mc5-IU-lzT"/>
                         <outlet property="passengerSelectionView" destination="6Di-GS-E04" id="hg3-6I-Jhs"/>
