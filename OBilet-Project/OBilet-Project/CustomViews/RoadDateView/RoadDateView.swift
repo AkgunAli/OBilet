@@ -32,6 +32,15 @@ final class RoadDateView: UIView{
         setupLayout()
         setDatePickerUI()
     }
+
+    
+    @IBAction func todayButtonAction(_ sender: Any) {
+        getCurrentDate()
+    }
+    @IBAction func tomorrowButtonAction(_ sender: Any) {
+        stringFromDate = dateFormater.string(from: Date.tomorrow) as String
+        dateInput.text = stringFromDate
+    }
     
     func setDatePickerUI(){
         datePicker = UIDatePicker.init(frame: CGRect(x: 0, y: 0, width: view.bounds.size.width, height: 200))
@@ -59,16 +68,13 @@ final class RoadDateView: UIView{
         dateInput.text = stringFromDate
     }
     
-    @IBAction func todayButtonAction(_ sender: Any) {
-        getCurrentDate()
-    }
-    @IBAction func tomorrowButtonAction(_ sender: Any) {
-        stringFromDate = dateFormater.string(from: Date.tomorrow) as String
-        dateInput.text = stringFromDate
-    }
     func getCurrentDate(){
         stringFromDate = dateFormater.string(from: Date()) as String
         dateInput.text = stringFromDate
+    }
+    func selectedDate() -> String {
+        dateFormater.dateFormat = "yyyy-MM-dd"
+        return dateFormater.string(from:  datePicker.date) as String
     }
     private func setupLayout() {
         NSLayoutConstraint.activate(

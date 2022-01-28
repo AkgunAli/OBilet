@@ -15,11 +15,13 @@ final class RoadCityView: UIView{
     @IBOutlet weak var roadCityInput: UITextField!
     @IBOutlet weak var roadCityImage: UIImageView!
     
-    var source : [String] = [""]
+    var source : [BusDataModel] = []
     let picker = UIPickerView()
     var placeholderText : String?
     var image: UIImage?
     var selectedIndex : Int?
+    var selectedBusParentId : Int?
+
     var changed = false
     override func awakeFromNib() {
         initWithNib()
@@ -38,7 +40,7 @@ final class RoadCityView: UIView{
         roadCityInput.placeholder = placeholderText
         roadCityImage.image = self.image
     }
-    func setUI (source : [String] , placeholderText : String? , image: UIImage){
+    func setUI (source : [BusDataModel] , placeholderText : String? , image: UIImage){
         self.source = source
         self.placeholderText = placeholderText
         self.image = image
@@ -69,7 +71,7 @@ final class RoadCityView: UIView{
     }
     func setNewPicker(index : Int){
         picker.selectRow(index, inComponent: 0, animated: true)
-        roadCityInput.text = source[index]
+        roadCityInput.text = source[index].name
         selectedIndex = index
     }
 }
@@ -84,11 +86,12 @@ extension RoadCityView : UIPickerViewDelegate, UIPickerViewDataSource{
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-         return source[row]
+        return source[row].name
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         selectedIndex = row
-        roadCityInput.text = source[row]
+        selectedBusParentId = source[row].parentId
+        roadCityInput.text = source[row].name
     }
 }

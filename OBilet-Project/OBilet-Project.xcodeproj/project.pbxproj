@@ -27,6 +27,7 @@
 		80C3D9A827A3DFDF00B42F82 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C3D9A727A3DFDF00B42F82 /* BaseModel.swift */; };
 		80C3D9AA27A3E9D000B42F82 /* TicketSearchVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C3D9A927A3E9D000B42F82 /* TicketSearchVM.swift */; };
 		80C3D9AC27A40FA800B42F82 /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C3D9AB27A40FA800B42F82 /* DateExtensions.swift */; };
+		80C3D9AE27A4342900B42F82 /* BusJourneysResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C3D9AD27A4342900B42F82 /* BusJourneysResponse.swift */; };
 		80C563B327A0530F0038D61C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C563B227A0530F0038D61C /* AppDelegate.swift */; };
 		80C563B527A0530F0038D61C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C563B427A0530F0038D61C /* SceneDelegate.swift */; };
 		80C563B727A0530F0038D61C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C563B627A0530F0038D61C /* ViewController.swift */; };
@@ -64,6 +65,7 @@
 		80C3D9A727A3DFDF00B42F82 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
 		80C3D9A927A3E9D000B42F82 /* TicketSearchVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketSearchVM.swift; sourceTree = "<group>"; };
 		80C3D9AB27A40FA800B42F82 /* DateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
+		80C3D9AD27A4342900B42F82 /* BusJourneysResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusJourneysResponse.swift; sourceTree = "<group>"; };
 		80C563AF27A0530F0038D61C /* OBilet-Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OBilet-Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		80C563B227A0530F0038D61C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80C563B427A0530F0038D61C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 				804994B027A2F4A900EBB0CB /* SessionModel.swift */,
 				80C3D9A527A3DE9600B42F82 /* BusLocationResponse.swift */,
 				80C3D9A727A3DFDF00B42F82 /* BaseModel.swift */,
+				80C3D9AD27A4342900B42F82 /* BusJourneysResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -459,6 +462,7 @@
 				804994A427A2CF7400EBB0CB /* Service.swift in Sources */,
 				804994AB27A2E92500EBB0CB /* Constant.swift in Sources */,
 				80C3D9AA27A3E9D000B42F82 /* TicketSearchVM.swift in Sources */,
+				80C3D9AE27A4342900B42F82 /* BusJourneysResponse.swift in Sources */,
 				80C563D427A0633A0038D61C /* ViewExtensions.swift in Sources */,
 				802BAF3927A0AC45004B8A5D /* RoadDateView.swift in Sources */,
 				80C563D927A07DC20038D61C /* RoadCityView.swift in Sources */,

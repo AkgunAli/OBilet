@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     }
     @IBOutlet weak var fromWherePicker: RoadCityView!{
         didSet{
-            fromWherePicker.setUI(source: viewModel.fromWhereArray, placeholderText: "İstanbul Avrupa", image: UIImage(named: "location-empty")!)
+            fromWherePicker.setUI(source: viewModel.fromWhereArray , placeholderText: "İstanbul Avrupa", image: UIImage(named: "location-empty")!)
         }
     }
     @IBOutlet weak var toWherePicker: RoadCityView!{
@@ -44,7 +44,11 @@ class ViewController: UIViewController {
             roundTripReturnView.dayDescription = "Dönüş"
         }
     }
-    @IBOutlet weak var passengerSelectionView: PassengerSelectionView!
+    @IBOutlet weak var passengerSelectionView: PassengerSelectionView!{
+        didSet{
+            passengerSelectionView.setUI(source: viewModel.passengerAddArray, placeholderText: "Yolcu Ekle")
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,14 +62,18 @@ class ViewController: UIViewController {
     }
 
     @IBAction func findTicketButtonAction(_ sender: Any) {
-        
+        guard  let selectedBusParentIdFromWhere = fromWherePicker.selectedBusParentId,
+               let selectedBusParentIdToWhere = toWherePicker.selectedBusParentId else { return }
+
+        print("roadDateView.datePicker.date",roadDateView.datePicker.date)
+        viewModel.getBusJourneys(originId:selectedBusParentIdFromWhere, destinationId: selectedBusParentIdToWhere, departureDate: roadDateView.selectedDate(), completion: {
+            
+        })
     }
     
     @IBAction func changeButtonAction(_ sender: Any) {
         guard  let fromWherePickerIndex = fromWherePicker.selectedIndex,
                let toWherePickerIndex = toWherePicker.selectedIndex else { return }
-//        fromWherePicker.selectedIndex = toWherePickerIndex
-//        toWherePicker.selectedIndex = fromWherePickerIndex
         toWherePicker.setNewPicker(index: fromWherePickerIndex)
         fromWherePicker.setNewPicker(index: toWherePickerIndex)
     }
